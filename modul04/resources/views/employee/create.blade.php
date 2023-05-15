@@ -45,28 +45,28 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input class="form-control" type="text" name="firstName" id="firstName" value="" placeholder="Enter First Name">
+                            <input class="form-control" type="text" name="firstName" id="firstName" value="value="{{old('firstName')}}"" placeholder="Enter First Name">
                             @error('firstName')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input class="form-control" type="text" name="lastName" id="lastName" value="" placeholder="Enter Last Name">
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="value="{{old('lastName')}}"" placeholder="Enter Last Name">
                             @error('lastName')
                                 <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input class="form-control" type="text" name="email" id="email" value="" placeholder="Enter Email">
+                            <input class="form-control" type="text" name="email" id="email" value="value="{{old('email')}}" placeholder="Enter Email">
                             @error('email')
                                 <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="age" class="form-label">Age</label>
-                            <input class="form-control" type="text" name="age" id="age" value="" placeholder="Enter Age">
+                            <input class="form-control" type="text" name="age" id="age" value="value="{{old('age')}}"" placeholder="Enter Age">
                             @error('age')
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
